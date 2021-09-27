@@ -39,3 +39,55 @@ satir.value="";
 document.querySelector(".sil").onclick=function(){
     liste.removeChild(liste.lastChild);
 }
+
+const paragraf=document.querySelector(".forH1");
+paragraf.innerHTML = `<h1>${"Programlama Dilleri"}</h1>`;
+
+//Klavyeden bir tusa basildiginda buyusun kuculsun
+document.querySelector(".textbox").onkeyup=function(){
+    const checkbox=document.querySelector(".checkbox");
+    const textbox=document.querySelector(".textbox");
+
+    if(checkbox.checked){
+textbox.value=texrbox.value.toUpperCase();
+    }else{
+        textbox.value=textbox.value.toLowerCase();
+    }
+}
+//2. ve uzun yol addEventListener() yolu
+
+// resim.addEventListener("mouseout",function(){
+//     resim.src="./img/aslan2.jpeg";
+// })
+
+//enter 13  delete46
+//onkeydown=klavyedeki tusa basip elinizi cektiginizde
+
+document.querySelector(".dil").onkeydown = function (klavye) {
+    if(klavye.keyCode==13) {
+
+        document.querySelector(".ekle").onclick();
+    }if(klavye.keyCode==46){
+        document.querySelector(".sil").onclick();
+    }
+}
+
+
+
+
+
+
+
+
+
+//mouse resmin ustune geldiginde aslan kukresin
+
+resim.onmouseover=function(){
+    resim.src="./img/aslan2.jpeg";
+}
+
+//mouse resmin ustunden cekildiginde
+
+resim.onmouseout=function(){
+    resim.src="./img/aslan1.jpeg"
+}
