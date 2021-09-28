@@ -37,7 +37,7 @@ satir.value="";
 //sil butonuna tiklandiginda li elemani silinsin
 
 document.querySelector(".sil").onclick=function(){
-    liste.removeChild(liste.lastChild);
+    liste.removeChild(liste.lastElementChild);
 }
 
 const paragraf=document.querySelector(".forH1");
