@@ -28,6 +28,10 @@ console.log(insan["diller"]);
 
 console.log(`Adim:${insan.ad} ve yasim: ${insan.yas}`);
  
+prompt("insan nesnesinden kimi gormek istersin - ad, soyad, yas..-")
+console.log(insan bilgi);
+
+
 //objeye key.valuelar ekleme
 
 insan.konum="Turkiye";
